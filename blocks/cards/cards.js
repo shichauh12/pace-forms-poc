@@ -53,4 +53,4 @@ async function fetchAndParseYAML(url) {
     }
 }
 
-fetchAndParseYAML('../config.yaml');
+fetchAndParseYAML('../.config.yaml');
