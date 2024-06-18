@@ -47,7 +47,7 @@ async function fetchAndParseYAML(url) {
         const data = jsyaml.load(yamlText);
         
         // Log the parsed data
-        console.log(data.value + " --- yaml" );
+        console.log(data.value + " --- yaml file" );
         
         // Do something with the data
         // For example, display it on the page
@@ -57,4 +57,4 @@ async function fetchAndParseYAML(url) {
     }
 }
 
-fetchAndParseYAML('../.config.yaml');
+fetchAndParseYAML('../../config.yaml');
