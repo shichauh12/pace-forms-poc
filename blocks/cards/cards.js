@@ -1,4 +1,4 @@
-import { createOptimizedPicture, getConfig } from '../../scripts/aem.js';
+import { createOptimizedPicture } from '../../scripts/aem.js';
 
 console.log("This is card");
 

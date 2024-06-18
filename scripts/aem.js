@@ -740,12 +740,12 @@ async function waitForLCP(lcpBlocks) {
   });
 }
 
-async function getConfig() {
+/*async function getConfig() {
   let obj;
   const res = await fetch('../.config.json')
   obj = await res.json();
   return obj;
-}
+}*/
 
 init();
 
@@ -774,5 +774,4 @@ export {
   updateSectionsStatus,
   waitForLCP,
   wrapTextNodes,
-  getConfig,
 };
