@@ -1,6 +1,10 @@
 import { createOptimizedPicture, getConfig } from '../../scripts/aem.js';
 
 console.log("This is card");
+
+import data from '../../.config.json' assert { type: 'json' };
+console.log(data.dev);
+
 /*fetch('../../config.json')
     .then((response) => response.json())
     .then((json) => {
