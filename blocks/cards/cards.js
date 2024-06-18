@@ -2,8 +2,8 @@ import { createOptimizedPicture, getConfig } from '../../scripts/aem.js';
 
 console.log("This is card");
 
-import data from '../../.config.json' assert { type: 'json' };
-console.log(data.dev);
+/*import data from '../../.config.json' assert { type: 'json' };
+console.log(data.dev);*/
 
 /*fetch('../../config.json')
     .then((response) => response.json())
@@ -26,9 +26,9 @@ export default function decorate(block) {
   ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
   block.textContent = '';
   block.append(ul);
-  getConfig().then(response => {
+  /*getConfig().then(response => {
    console.log(response.dev);
-  })
+  })*/
 }
 
 async function fetchAndParseYAML(url) {
@@ -47,7 +47,7 @@ async function fetchAndParseYAML(url) {
         const data = jsyaml.load(yamlText);
         
         // Log the parsed data
-        console.log(data.value + " --- yaml file" );
+        console.log(data.value + " --- fstab yaml file" );
         
         // Do something with the data
         // For example, display it on the page
@@ -57,4 +57,4 @@ async function fetchAndParseYAML(url) {
     }
 }
 
-fetchAndParseYAML('../../config.yaml');
+fetchAndParseYAML('../../fstab.yaml');
